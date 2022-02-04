@@ -159,23 +159,15 @@ for i in range(100):
       print(board[i],"\n")
     """
     
-    points=0
-
-    #Η άσπρη ομάδα παίζει 1η
     if checkofficer(white_officer,board):
-      points+=1
       white_points+=1
-
     if checktower(white_tower,board):
-      points+=1
       white_points+=1
 
+    c=checkqueen(black_queen,board) #προσθέτει τους ανάλογους πόντους
+    if c>0:
+      black_points+=c
 
-    if points==0:  #αν δεν την έχουν σκοτώσει τα άσπρα πιόνια
-      c=checkqueen(black_queen,board)
-      if c>0:
-        points=c
-        black_points+=points
 
 print ("βαθμοί άσπρης ομάδας:",white_points)
 print ("βαθμοί μαύρης ομάδας:",black_points,)
