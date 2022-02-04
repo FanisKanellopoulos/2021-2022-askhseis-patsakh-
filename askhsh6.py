@@ -170,4 +170,4 @@ for i in range(100):
 
 
 print ("βαθμοί άσπρης ομάδας:",white_points)
-print ("βαθμοί μαύρης ομάδας:",black_points,)
+print ("βαθμοί μαύρης ομάδας:",black_points)
