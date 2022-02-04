@@ -164,9 +164,9 @@ for i in range(100):
     if checktower(white_tower,board):
       white_points+=1
 
-    c=checkqueen(black_queen,board) #προσθέτει τους ανάλογους πόντους
+    c=checkqueen(black_queen,board) 
     if c>0:
-      black_points+=c
+      black_points+=c      #προσθέτει τους ανάλογους πόντους
 
 
 print ("βαθμοί άσπρης ομάδας:",white_points)
